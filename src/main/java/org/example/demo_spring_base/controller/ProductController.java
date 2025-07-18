@@ -32,7 +32,7 @@ public List<Product> getAllProducts() {
     }
 
 // Filtre
-    @RequestMapping("/search")
+    @GetMapping ("/filter")
     @ResponseBody
     public List<Product> filterProducts(
             @RequestParam(required = false) String name,
