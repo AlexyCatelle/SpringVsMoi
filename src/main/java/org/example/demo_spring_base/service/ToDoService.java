@@ -34,6 +34,6 @@ public class ToDoService {
     }
 
     public Todo getFirstTodo() {
-        return todos.isEmpty() ? null : todos.get(0);
+        return todos.isEmpty() ? null : todos.getFirst();
     }
 }
