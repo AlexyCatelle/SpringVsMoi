@@ -1,6 +1,6 @@
 package org.example.demo_spring_base.controller;
 
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
 import org.example.demo_spring_base.model.Product;
 import org.example.demo_spring_base.service.ProductService;
 import org.springframework.stereotype.Controller;
@@ -16,6 +16,11 @@ public class ProductController {
 //public ProductController(ProductService productService) {
 //    this.productService = productService;
 //}
+    @GetMapping("/error")
+    @ResponseBody
+    public String error() {
+        return "error";
+    }
 
 // All products
 @GetMapping("/all")
